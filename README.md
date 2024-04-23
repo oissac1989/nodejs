@@ -40,6 +40,10 @@ FASTIFY
 - Micro Framework para criação de rotas http
     npm install fastify
 
+    Biblioteca do Swagger
+    npm i @fastify/swagger
+    npm i @fastify/swagger-ui
+
 PRISMA 
 - ORM de conexão com Banco de Dados
     npm install prisma -D
@@ -49,6 +53,9 @@ PRISMA
 
     criar o database
         npx prisma migrate dev
+
+    criar um primeiro registro de evento no BD para testes
+        npx prisma db seed
 
     Iniciar o Prisma studio (http://localhost:5555/)
         npx prisma studio
