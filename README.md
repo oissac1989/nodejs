@@ -44,6 +44,9 @@ FASTIFY
     npm i @fastify/swagger
     npm i @fastify/swagger-ui
 
+    Biblioteca de controle de dominios
+    npm i @fastify/cors
+
 PRISMA 
 - ORM de conexão com Banco de Dados
     npm install prisma -D
@@ -63,3 +66,10 @@ PRISMA
 ZOD 
 - Biblioteca de validação (https://github.com/turkerdev/fastify-type-provider-zod)
     npm install fastify-type-provider-zod
+
+TSUP
+- Biblioteca de conversão de Typescript para JavaScript
+    npm i tsup -D
+    
+    Converter os ts p/ js
+    npm rum build
