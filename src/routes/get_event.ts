@@ -4,6 +4,7 @@ import { request } from "http";
 import { Schema, z } from "zod";
 import { prisma } from "../lib/prisma";
 import { title } from "process";
+import { BadRequest } from "./_errors/bad_request";
 
 
 export async function getEvent(app: FastifyInstance) {
@@ -45,7 +46,7 @@ export async function getEvent(app: FastifyInstance) {
             })
 
             if (event === null) {
-                throw new Error('Event not found!')
+                throw new BadRequest('Event not found!')
             }
 
             return reply.send({
