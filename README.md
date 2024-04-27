@@ -1,3 +1,13 @@
+# NodeJs Server
+
+Projeto criado a partir do evento NLW Unite da Rocketseat
+
+A premissa desta aplicação, é criar o Backend do sistema de gestão de paticipantes de eventos presenciais. Adminsitrando o cadastro de eventos e seus participantes.
+
+
+
+
+
 
 
 #CONFIGURAÇÃO DO AMBIENTE WIN/WSL (Ubuntu)
