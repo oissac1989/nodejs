@@ -82,7 +82,3 @@ OU
 ### Testes
 
 Em desenvolvimento
-
-## Documentação da API
-
-A documentação detalhada dos endpoints disponíveis nesta API está disponível [Aqui](https://nlw-unite-nodejs.onrender.com/docs).
