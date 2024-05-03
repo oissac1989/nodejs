@@ -1,103 +1,88 @@
-# NodeJs Server
 
-Projeto criado a partir do evento NLW Unite da Rocketseat
+# NodeJs API
 
-A premissa desta aplicação, é criar o Backend do sistema de gestão de paticipantes de eventos presenciais. Adminsitrando o cadastro de eventos e seus participantes.
+_Projeto desenvolvido no Bootcampo da Rocketseat NLW-Unite_
 
+Este projeto consiste em uma API desenvolvida em Node.js para gerenciar participantes de eventos. Através desta API, é possível cadastrar eventos, visualizar informações sobre eles, cadastrar participantes, listar participantes cadastrados, associar participantes a eventos e realizar o check-in dos participantes nos eventos que estão cadastrados.
 
+## Tecnologias Utilizadas
 
-
-
-
-
-#CONFIGURAÇÃO DO AMBIENTE WIN/WSL (Ubuntu)
-
-instalar o zsh-nvm para utilziar a nvm no WSL
-    
-    git clone https://github.com/lukechilds/zsh-nvm.git ~/.zsh-nvm
-
-    source ~/.zsh-nvm/zsh-nvm.plugin.zsh
-
-Instalar o NVM (Gerenciador de versões do NodeJs - https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
-    
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-
-    source .bashrc
-
-Instalar a ultima versão LTS do NodeJs
-    
-    nvm install --lts
-
-Iniciar o projeto NodeJs
-    
-    npm init -y
-
-Instalar o typescript para trabalhar com o NodeJs em mode de desenvolvimento(-D)
-    
-    npm i typescript @types/node -D
-
-Criar as configurações do Typescript
-acessar os dados base do tsconfig no git (https://github.com/tsconfig/bases) e colar as configurações de acordo com a versão do Node.
-    
-    npx tsc --init    
-
-Executar o projeto no modo Dev
-    
-    npm run dev
+- **WSL (Windows Subsystem for Linux)**: Utilizado para criar um ambiente de desenvolvimento compatível com o Linux no Windows.
+- **NVM (Node Version Manager)**: Gerenciador de versões do Node.js, permitindo a instalação e utilização de diferentes versões do Node.js em um mesmo sistema.
+- **Typescript (TSX)**: Superset do JavaScript que adiciona tipagem estática ao código, aumentando a robustez e facilitando a manutenção do projeto.
+- **Fastify**: Framework web para Node.js, conhecido por sua velocidade e eficiência na construção de APIs.
+- **Prisma ORM**: ORM (Object-Relational Mapping) utilizado para interagir com o banco de dados de forma simplificada e segura, utilizando TypeScript.
+- **Zod**: Biblioteca para validação de esquemas de dados em TypeScript, garantindo a consistência e integridade dos dados manipulados pela API.
 
 
-FERRAMENTAS DE DESENVOLVIMENTO
+## Como Utilizar
 
-TSX 
-- Conversor dos arquivos Typescript para JavaScript
+### Pré-requisitos
 
-      npm install tsx -D
+- Node.js
+- NPM
 
-FASTIFY 
-- Micro Framework para criação de rotas http
 
-      npm install fastify
+### Comando úteis
 
-    Biblioteca do Swagger
+- Clone este repositório:
 
-      npm i @fastify/swagger
-      npm i @fastify/swagger-ui
+   ```bash
+   git clone https://github.com/oissac1989/nodejs.git
+   ```
 
-    Biblioteca de controle de dominios
+- Navegue até o diretório do projeto:
 
-      npm i @fastify/cors
+   ```bash
+   cd nodejs
+   ```
 
-PRISMA 
-- ORM de conexão com Banco de Dados
 
-      npm install prisma -D
+### Configuração do Banco de Dados
 
-    Inicializar o prisma
+1. Instalação do ORM Prisma:
 
-      npx prisma init --datasource-provider SQLite
+   ```bash
+   npm install prisma
+   ```
 
-    criar o database
+2. Criação das tabelas:
 
-      npx prisma migrate dev
+	```bash
+	npm run db:migrate
+	```
 
-    criar um primeiro registro de evento no BD para testes
 
-        npx prisma db seed
+### Execução
 
-    Iniciar o Prisma studio (http://localhost:5555/)
+1. Inicie o servidor de desenvolvimento:
 
-        npx prisma studio
+   ```bash
+   npm run dev
+   ```
+   
+OU
 
-ZOD 
-- Biblioteca de validação (https://github.com/turkerdev/fastify-type-provider-zod)
 
-      npm install fastify-type-provider-zod
+1. Build da aplicação em JS
 
-TSUP
-- Biblioteca de conversão de Typescript para JavaScript
+	```bash
+	npm run build
+	```
 
-      npm i tsup -D
+2. Start da aplicação
 
-    Converter os ts p/ js
+	```bash
+	npm run start
+	```
+   
 
-      npm rum build
+- A API estará disponível em `http://localhost:3333`.
+
+### Testes
+
+Em desenvolvimento
+
+## Documentação da API
+
+A documentação detalhada dos endpoints disponíveis nesta API está disponível [Aqui](https://nlw-unite-nodejs.onrender.com/docs).
