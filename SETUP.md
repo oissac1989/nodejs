@@ -2,9 +2,12 @@
 
 ### instalar o zsh-nvm para utilziar a nvm no WSL
     
-    git clone https://github.com/lukechilds/zsh-nvm.git ~/.zsh-nvm
-    
-    source ~/.zsh-nvm/zsh-nvm.plugin.zsh
+```bash
+git clone https://github.com/lukechilds/zsh-nvm.git ~/.zsh-nvm
+```
+```bash    
+source ~/.zsh-nvm/zsh-nvm.plugin.zsh
+```
     
 ### Instalar o NVM (Gerenciador de versões do NodeJs - https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
