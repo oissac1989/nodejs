@@ -10,9 +10,14 @@ source ~/.zsh-nvm/zsh-nvm.plugin.zsh
 ```
     
 ### Instalar o NVM (Gerenciador de versões do NodeJs - https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
-    source .bashrc
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+
+```bash
+source .bashrc
+```
 
 ### Instalar a ultima versão LTS do NodeJs
     nvm install --lts
